@@ -7,6 +7,7 @@ import './CSS/props.css';
 import Header from './screens/header'
 import Sidebar from './screens/sidebar'
 import HomePage from './screens/home'
+import Rightbar from './screens/rightbar'
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <div className="app-content">
         <HomePage />
       </div>
-      
+      <Rightbar />
     </div>
   );
 }

@@ -29,7 +29,7 @@ function Sidebar(){
     for(let i=0; i< nav.length; i++){
         navigation.push(
             <li key={"nav-" + i + "-" + nav[i].slug}>
-                <a href={nav[i].slug} className={"link noul flex" + (currentPage == nav[i].slug ? " on" : "")}>
+                <a href={nav[i].slug} className={"link noul flex" + (currentPage === nav[i].slug ? " on" : "")}>
                     {nav[i].icon}
                     <h2 className="lbl">{nav[i].label}</h2>
                 </a>
@@ -39,7 +39,8 @@ function Sidebar(){
     return (
         <div className="sidebar rel">
 
-            <h2 className="logo-name"> EDUPlus+ </h2>
+            <a href="/" className="noul"><h2 className="logo-name"> EDUPlus+</h2></a>
+            
             {/** 
             <a href="/" className="logo bl">
                 <img src={logo} className="logo-img bl" />
@@ -60,12 +61,12 @@ function Sidebar(){
             <div className="stats flex">
 
                 <div className="stat-box flex">
-                    <VerifiedUserOutlinedIcon className="icon" style={{ fontSize: 28 }} />
+                    <VerifiedUserOutlinedIcon className="icon" style={{ fontSize: 28 }, { color: 'green' }} />
                     <h2 className="val">1800</h2>
                     <h2 className="lbl">Points</h2>
                 </div>
                 <div className="stat-box flex">
-                    <BatteryChargingFullRoundedIcon className="icon" style={{ fontSize: 28 }}/>
+                    <BatteryChargingFullRoundedIcon className="icon" style={{ fontSize: 28 } , { color: 'red' }}/>
                     <h2 className="val">45.5</h2>
                     <h2 className="lbl">Complete</h2>
                 </div>
