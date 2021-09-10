@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.button {
+  outline: none;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.fixed {
+  position: fixed;
+}
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+
+.noul {
+  text-decoration: none;
+}
+.bl {
+  display: block;
+}
+
+.fontb {
+  font-weight: bold;
+}
+
+.fontn {
+  font-weight: normal;
+}

@@ -1,0 +1,234 @@
+/*Sidebar------------------------------------------------------------- */
+
+.sidebar {
+  width: 275px;
+  margin-right: 20px;
+  background-color: rgb(245, 245, 245);
+}
+
+.sidebar .logo-name{
+    padding: 20px 35px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.sidebar .logo {
+  padding: 20px 25px;
+}
+
+.sidebar .logo img {
+  height: 40px;
+}
+
+.sidebar .nav {
+  font-size: 10px;
+  padding: 35px 35px;
+}
+
+.sidebar .nav li a {
+  align-items: center;
+  line-height: 1;
+  padding: 1px 20px;
+  margin-bottom: 6px;
+}
+
+.sidebar .nav li a h2 {
+  margin-left: 10px;
+  font-weight: normal;
+  color: gray;
+}
+
+.sidebar .nav li a.on {
+  border-left: 2px #ea5252 solid;
+  color: #ea5252;
+  font-weight: bold;
+}
+
+.sidebar .updated-course {
+  align-items: center;
+  padding: 0px 35px;
+  margin: 35px 0px;
+}
+
+.sidebar .updated-course .icon {
+  background: #ea5252;
+  color: white;
+  padding: 8px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.sidebar .updated-course .lbl {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.sidebar .updated-course h2 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #777;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar .stats {
+  padding: 35px 25px;
+}
+
+.sidebar .stats .stat-box {
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  line-height: 0;
+}
+
+.sidebar .stats .stat-box .icon {
+  margin-bottom: 20px;
+}
+.sidebar .stats .stat-box .val {
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+.sidebar .stats .stat-box .lbl {
+  font-size: 13px;
+  color: #777;
+  font-weight: normal;
+}
+
+.sidebar .me {
+  align-items: center;
+  padding: 20px 35px;
+}
+
+.sidebar .me .photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-right: 10px;
+  background: #eee;
+}
+
+.sidebar .me .name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  margin: 0px;
+}
+.sidebar .me .name .uname {
+  font-size: 13px;
+  font-weight: normal;
+  color: #777;
+  margin: 0px;
+}
+
+.app-content {
+  flex: 2;
+  padding: 20px 0px;
+}
+
+/*HOME PAGE--------------------------------------------------------- */
+
+.home-page {
+}
+.home-page .section {
+
+}
+.home-page .section .title {
+  margin-bottom: 20px;
+}
+.home-page .section .tutors {
+}
+.home-page .section .tutors .tutor {
+  border: 2px #ea5252 solid;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.home-page .section .tutors .tutor img {
+  width: 100%;
+  height: 100%;
+  border-radius: 55px;
+  cursor: pointer;
+}
+.home-page .section .tutors .tutor:hover {
+}
+
+.home-page .section-b{
+    margin-top: 50px;
+}
+
+.home-page .section-b .courses{
+
+}
+
+.home-page .section-b .courses a{}
+.home-page .section-b .courses .block{
+    margin-right: 30px;
+    width: 250px;
+    height: 375px;
+    background: #e2e2e2;
+    border-radius: 20px;
+    background-size: cover !important;
+}
+
+.home-page .section .courses .block .user{
+    align-items: center;
+    padding: 10px;
+    z-index: 1;
+}
+.home-page .section .courses .block .user .pic{
+    border: 3px #fff solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    padding: 3px;
+    margin: 10px;
+}
+.home-page .section .courses .block .user .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+}
+.home-page .section .courses .block .user .meta{
+    padding: 20px 0px;
+    line-height: 2px;
+}
+.home-page .section .courses .block .user .meta .name{
+    font-size: 15px; 
+    color: #fff;
+}
+.home-page .section .courses .block .user .meta .uname{
+    font-size: 13px;
+    color: #fff;
+}
+
+.home-page .section .courses .block .duration{
+    font-size: 8px;
+    color: #fff;
+    top: 95px ;
+    left: 20px ;
+    line-height: 1;
+    box-shadow: 0px 2px 1pxrgba(0, 0, 0, 0.33);
+    background: #ea5252;
+    border-radius: 10px;
+    padding: 1px 15px;
+    z-index: 1;
+}
+
+.home-page .section .courses .block .course-title{
+    font-size: 10px;
+    color: #fff;
+    bottom: 15px;
+    left: 10px;
+    right: 40px;
+    background: #2b2323e0;
+    padding: 2px 15px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px #000;
+}
