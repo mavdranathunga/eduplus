@@ -1,0 +1,89 @@
+.roadMaps-page {
+    background-image: url('../ui/landingpage1.jpg');
+    
+    margin-left: 270px;
+}
+
+.webDeveloper-roadmap .main-title {
+  margin: 30px;
+  font-size: 35px;
+}
+
+.webDeveloper-roadmap .front-end, .webDeveloper-roadmap .back-end {
+  flex-direction: column;
+}
+
+.webDeveloper-roadmap .front-end .title2, .webDeveloper-roadmap .back-end .title2  {
+  margin: 30px;
+  font-size: 28px;
+}
+
+.webDeveloper-roadmap .step-1 {
+  flex-direction: column;
+  align-items: center;
+  background: rgba(246, 246, 246, 0.8);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.webDeveloper-roadmap .step-2 {
+  flex-direction: column;
+  align-items: center;
+  background: rgb(246, 246, 246, 0.8);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.webDeveloper-roadmap .step-3 {
+  flex-direction: column;
+  align-items: center;
+  background: rgb(246, 246, 246, 0.8);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.webDeveloper-roadmap .step-4 {
+    flex-direction: column;
+    align-items: center;
+    background: rgb(246, 246, 246, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+
+.webDeveloper-roadmap .section-1 {
+  font-size: 22px;
+}
+
+.webDeveloper-roadmap .section-2 {
+  margin: 10px;
+}
+
+.webDeveloper-roadmap .section-3 .tab {
+  margin: 6px;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.webDeveloper-roadmap .section-3 .tab .item1 {
+  font-size: 18px;
+  margin: 10px;
+  padding: 20px;
+  justify-content: center;
+  background: rgb(215, 215, 215, 0.8);
+  border-radius: 20px;
+}
+
+.webDeveloper-roadmap .section-3 .tab .item {
+  font-size: 18px;
+  margin: 10px;
+  padding: 20px;
+  justify-content: center;
+  background: rgb(237, 237, 237, 0.8);
+  border-radius: 20px;
+}

@@ -54,29 +54,29 @@ function Rightbar() {
 
 
     var roadMapList = [];
-    for(let i=0; i<popularRoadMap.length; i++){
-        roadMapList.push(
+    for(let i=0; i<popularCourse.length; i++){
+        courseList.push(
             <a href="#" className="course rel" key={"popular-course-" + i }>
                 <div className="block" style={{
-                    background:"#e2e2e2 url(" + popularRoadMap[i].poster + ") no-repeat center"
+                    background:"#e2e2e2 url(" + popularCourse[i].poster + ") no-repeat center"
                 }}>
                     
                     <div className="user abs flex">
                         <div className="pic">
-                            <img src={popularRoadMap[i].tutor.dp} className="bl" />
+                            <img src={popularCourse[i].tutor.dp} className="bl" />
                         </div>
                         <div className="meta rel">
-                            <h2 className=" name fontb">{popularRoadMap[i].tutor.name}</h2>
-                            <h2 className=" uname fontn">{popularRoadMap[i].tutor.username}</h2>
+                            <h2 className=" name fontb">{popularCourse[i].tutor.name}</h2>
+                            <h2 className=" uname fontn">{popularCourse[i].tutor.username}</h2>
                         </div>
                     </div>
 
                     <div className="duration abs">
-                        <h2 className="fontb">{popularRoadMap[i].duration}</h2>
+                        <h2 className="fontb">{popularCourse[i].duration}</h2>
                     </div>
 
                     <div className="course-title abs">
-                        <h2 className="fontn">{popularRoadMap[i].title}</h2>
+                        <h2 className="fontn">{popularCourse[i].title}</h2>
                     </div>
 
                 </div>
@@ -101,11 +101,11 @@ function Rightbar() {
                  
                  <div className="courses rel flex">
                     <div className="course-a rel flex">
-                        {roadMapList[0]}
+                        {courseList[0]}
                     </div>
                     <div className="flex cols">
-                        {roadMapList[1]}
-                        {roadMapList[2]}
+                        {courseList[1]}
+                        {courseList[2]}
                     </div>
                  </div>
              </div>

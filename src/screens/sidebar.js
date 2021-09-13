@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import logo from '../ui/logo-udemy.svg';
 
+
+import { NavLink } from "react-router-dom";
+
+
+
 //ui--------------------------------------------------------------
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
@@ -29,15 +34,15 @@ function Sidebar(){
     for(let i=0; i< nav.length; i++){
         navigation.push(
             <li key={"nav-" + i + "-" + nav[i].slug}>
-                <a href={nav[i].slug} className={"link noul flex" + (currentPage === nav[i].slug ? " on" : "")}>
+                <NavLink to={nav[i].slug} className="link noul flex">
                     {nav[i].icon}
                     <h2 className="lbl">{nav[i].label}</h2>
-                </a>
+                </NavLink>
             </li>
         );
     }
     return (
-        <div className="sidebar rel">
+        <div className="sidebar">
 
             <a href="/" className="noul"><h2 className="logo-name"> EDUPlus+</h2></a>
             
