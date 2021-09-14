@@ -1,62 +1,44 @@
 .roadMaps-page {
-    background-image: url('../ui/landingpage1.jpg');
-    
-    margin-left: 270px;
+  background-image: url("../ui/backgroundimg6.jpg");
+  background-repeat: repeat;
+}
+
+.webDeveloper-roadmap {
+  background: rgba(255, 255, 255, 0.8);
+  margin-left: 270px;
+  padding: 20px;
 }
 
 .webDeveloper-roadmap .main-title {
-  margin: 30px;
-  font-size: 35px;
+  font-size: 30px;
 }
 
-.webDeveloper-roadmap .front-end, .webDeveloper-roadmap .back-end {
+.webDeveloper-roadmap .front-end,
+.webDeveloper-roadmap .back-end {
   flex-direction: column;
 }
 
-.webDeveloper-roadmap .front-end .title2, .webDeveloper-roadmap .back-end .title2  {
-  margin: 30px;
-  font-size: 28px;
-}
 
-.webDeveloper-roadmap .step-1 {
+.webDeveloper-roadmap .step {
   flex-direction: column;
   align-items: center;
-  background: rgba(246, 246, 246, 0.8);
-  margin: 20px;
+  background: rgba(250, 250, 250, 0.8);
+  margin: 20px 10px;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
-.webDeveloper-roadmap .step-2 {
-  flex-direction: column;
-  align-items: center;
-  background: rgb(246, 246, 246, 0.8);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
+.webDeveloper-roadmap .title2{
+  font-size: 25px;
+  margin-top: 20px;
 }
 
-.webDeveloper-roadmap .step-3 {
-  flex-direction: column;
-  align-items: center;
-  background: rgb(246, 246, 246, 0.8);
-  margin: 20px;
-  padding: 20px;
-  border-radius: 20px;
+.webDeveloper-roadmap .step1-2 .step{
+  width: 50%;
 }
-
-.webDeveloper-roadmap .step-4 {
-    flex-direction: column;
-    align-items: center;
-    background: rgb(246, 246, 246, 0.8);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
-  }
-
 
 .webDeveloper-roadmap .section-1 {
-  font-size: 22px;
+  font-size: 15px;
 }
 
 .webDeveloper-roadmap .section-2 {
@@ -65,25 +47,34 @@
 
 .webDeveloper-roadmap .section-3 .tab {
   margin: 6px;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .webDeveloper-roadmap .section-3 .tab .item1 {
-  font-size: 18px;
+  font-size: 13px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
-  background: rgb(215, 215, 215, 0.8);
-  border-radius: 20px;
+  background: rgb(215, 215, 215);
+  border-radius: 10px;
 }
 
 .webDeveloper-roadmap .section-3 .tab .item {
-  font-size: 18px;
+  font-size: 12px;
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
-  background: rgb(237, 237, 237, 0.8);
-  border-radius: 20px;
+  background: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.webdeveloper-roadmap-img {
+  margin: 20px 10px;
+  width: 573px;
+  height: 666px;
+  background-image: url("../ui/frontendImg1.jpg");
+  background-size: contain;
+  border-radius: 10px;
 }

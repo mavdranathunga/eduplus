@@ -162,13 +162,13 @@ function HomePage() {
 
         {
             ID: 2,
-            title: "Grapic Designer RoadMap",
+            title: "Graphic Designer RoadMap",
             poster: roadmap2
         },
 
         {
-            ID: 2,
-            title: "Web Developer RoadMap",
+            ID: 3,
+            title: "Game Developer RoadMap",
             poster: roadmap4
         },
     ]);
@@ -180,7 +180,7 @@ function HomePage() {
             <NavLink to="/roadMap" className="course rel" key={"popular-RoadMap-" + i }>
                 <div className="block" style={{
                     background:"#e2e2e2 url(" + popularRoadMap[i].poster + ") no-repeat center"
-                }}>
+                    }}>
 
                     <div className="course-title abs">
                         <h2 className="fontn">{popularRoadMap[i].title}</h2>

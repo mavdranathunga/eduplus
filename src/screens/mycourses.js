@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import '../CSS/mycourses.css';
+
 
 function MycoursesPage() {
 
@@ -7,8 +9,12 @@ function MycoursesPage() {
     })
 
     return (
-        <div className="mycourses-page">
-            <h2>My Courses</h2>
+        <div className="mycourses">
+        
+            <div className="mycourses-page flex">
+                <h2>My Courses</h2>
+            </div>
+
         </div>
     )
 }

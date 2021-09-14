@@ -23,7 +23,6 @@ import {
 
 function App() {
 
-  //<Rightbar />
   return (
     <div className="App flex">
       <HashRouter>

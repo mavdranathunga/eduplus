@@ -1,0 +1,12 @@
+
+.discover{
+  background-image: url("../ui/backgroundimg6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.discover-page {
+  margin-left: 270px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}

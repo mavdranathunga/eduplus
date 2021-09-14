@@ -2,6 +2,10 @@
   padding: 0px 20px 0px 0px;
 }
 
+.app-content {
+  flex: 2 1;
+}
+
 .discover-page {
   margin-left: 270px;
 }
@@ -20,21 +24,21 @@
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 20px;
-  margin-right: 20px;
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(250, 250, 250, 0.9);
 }
 
 .sidebar .logo-name {
-  padding: 1px;
-  font-size: 30px;
-  font-weight: bolder;
+  padding: 10px;
+  font-size: 35px;
+  font-weight: bold;
   color: #000;
   margin: 50px;
 }
 
 .sidebar .logo-name:hover {
   color: #ea5252;
+
+  font-weight: bolder;
 }
 
 .sidebar .logo {
@@ -82,6 +86,15 @@
   margin: 5px 0px;
 }
 
+.sidebar .updated-course:hover .icon {
+  background: rgb(56, 56, 56);
+}
+
+.sidebar .updated-course:hover .lbl,
+.sidebar .updated-course:hover .lbl h2 {
+  color: rgb(71, 71, 71);
+}
+
 .sidebar .updated-course .icon {
   background: #ea5252;
   color: white;
@@ -92,12 +105,12 @@
 .sidebar .updated-course .lbl {
   font-size: 15px;
   font-weight: bold;
-  color: #333;
+  color: rgba(51, 51, 51, 0.8);
 }
 .sidebar .updated-course h2 {
   font-size: 13px;
   font-weight: normal;
-  color: #777;
+  color: rgba(119, 119, 119, 0.8);
   margin: 0px;
   padding: 0px;
 }
@@ -156,16 +169,33 @@
   margin: 0px;
 }
 
-.app-content {
-  flex: 2;
-  padding: 20px 10px 20px 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*HOME PAGE--------------------------------------------------------- */
-
+.home {
+  background-image: url("../ui/backgroundimg6.jpg");
+  background-size: cover;
+  height: 100%;
+}
 .home-page {
-  background-image: url('../ui/landingpage1.jpg');
+  background: rgba(255, 255, 255, 0.6);
   margin-left: 270px;
+  padding: 20px;
 }
 .home-page .section {
 }
@@ -176,14 +206,19 @@
 .home-page .section .tutors {
 }
 .home-page .section .tutors .tutor {
-  border: 2px #ea5252 solid;
+  border: 2px #e65c5c solid;
   background: #fff;
   width: 60px;
   height: 60px;
   overflow: hidden;
   margin-right: 20px;
-  border-radius: 50px;
+  border-radius: 40px;
   padding: 3px;
+}
+
+.home-page .section .tutors .tutor:hover {
+  border: 3px #ff3d3d solid;
+  background: rgb(255, 255, 255);
 }
 
 .home-page .section .tutors .tutor img {
@@ -210,7 +245,7 @@
   width: 260px;
   height: 410px;
   background: #e2e2e2;
-  border-radius: 20px;
+  border-radius: 15px;
   background-size: cover !important;
 }
 
@@ -227,6 +262,7 @@
   padding: 3px;
   margin: 10px;
 }
+
 .section .courses .block .user .pic img {
   width: 100%;
   height: 100%;
@@ -258,16 +294,35 @@
   z-index: 1;
 }
 
+.section .courses .block:hover .duration {
+  font-size: 8px;
+  color: rgb(0, 0, 0);
+  top: 95px;
+  left: 20px;
+  line-height: 1;
+  box-shadow: 0px 2px 1pxrgba (0, 0, 0, 0.33);
+  background: #ea5252;
+  border-radius: 10px;
+  padding: 1px 15px;
+  z-index: 1;
+}
 .courses .block .course-title {
   font-size: 10px;
   color: #fff;
   bottom: 15px;
   left: 10px;
   right: 40px;
-  background: #2b2323e0;
+  background: #362d2dd3;
   padding: 2px 15px;
   border-radius: 20px;
   text-shadow: 1px 1px 1px #000;
+}
+
+.courses .block:hover .course-title {
+  font-size: 11px;
+  background: #000000;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 .section-c {
@@ -276,6 +331,13 @@
 
 .home-page .section .topTutors .user-block {
   margin: 0px 20px 10px 20px;
+  padding: 5px;
+}
+
+.home-page .section .topTutors .user-block:hover {
+  margin: 0px 20px 10px 20px;
+  background: rgba(236, 236, 236, 0.7);
+  border-radius: 20px;
 }
 
 .home-page .section .topTutors {
@@ -313,12 +375,27 @@
   color: #777;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*rightbar---------------------------------------------------------- */
 
 .rightbar {
   width: 50%;
-  padding: 20px 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px 25px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .rightbar .section .title {
@@ -389,6 +466,13 @@
   border-radius: 10px;
 }
 
+.rightbar .section .courses .course-a .block:hover .course-title {
+  font-size: 11px;
+  background: #000000;
+  border-radius: 10px;
+  text-shadow: none;
+}
+
 /* -----------------------------------------------------------------*/
 
 .rightbar .section .courses .cols .block {
@@ -409,11 +493,17 @@
   padding: 0px;
 }
 
-
 .rightbar .section .courses .cols .block .course-title {
   font-size: 8px;
   bottom: 8px;
   border-radius: 10px;
+}
+
+.rightbar .section .courses .cols .block:hover .course-title {
+  font-size: 11px;
+  background: #000000;
+  border-radius: 10px;
+  text-shadow: none;
 }
 
 /* offer-----------------------------------------------------------------------------------------------*/
@@ -459,18 +549,31 @@
   padding: 16px 36px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* course preview------------------------------------------------------------*/
 
 .course-page {
-  background-image: url('../ui/landingpage1.jpg');
-  
-}
-.course-page .background-image{
-  filter: blur(8px);
+  background-image: url("../ui/backgroundimg6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .course-page .course-info {
+  background: rgba(255, 255, 255, 0.6);
   margin-left: 270px;
+  padding: 20px;
 }
 
 .course-page .tutor {
@@ -582,7 +685,8 @@
 
 .course-preview {
   flex-direction: column;
-  margin: 0px 10px 0px 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .course-preview .preview-video {
@@ -604,11 +708,33 @@
   margin: 10px;
 }
 
+
+
+
+
+
+
+
+
+
 /* Category page--------------------------------------------------------- */
 
+.category {
+  background-image: url("../ui/backgroundimg6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
 .category-page {
-  background-image: url('../ui/landingpage1.jpg');
+  background: rgba(255, 255, 255, 0.8);
   margin-left: 270px;
+  padding: 20px;
+}
+
+.category-page .category-courses,
+.category-page .category-roadMaps {
+  flex-direction: column;
+  padding-bottom: 35px;
 }
 .category-page .category-courses .courses .block {
   margin: 15px 25px 30px 20px;
@@ -638,7 +764,7 @@
   font-size: 7px;
   color: #fff;
   top: 105px;
-  left: 20px;
+  left: 30px;
   line-height: 1;
   box-shadow: 0px 2px 1pxrgba (0, 0, 0, 0.33);
   background: #ea5252;
@@ -657,6 +783,15 @@
   border-radius: 10px;
   text-shadow: 1px 1px 1px #000;
 }
+
+.category-page .category-courses .block:hover .course-title {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: bolder;
+  text-shadow: none;
+}
+
 .category-page .category-courses .course-cates {
   flex-direction: column;
 }
@@ -689,4 +824,12 @@
   font-size: 10px;
   bottom: 30px;
   border-radius: 10px;
+}
+
+.category-page .category-roadMaps .courses .block:hover .course-title {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: bolder;
+  text-shadow: none;
 }

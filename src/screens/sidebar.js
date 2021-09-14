@@ -22,12 +22,12 @@ function Sidebar(){
 
     const [nav, setNav] = useState([
         {label: "Home", slug: "/", icon: <HomeIcon color="disabled"/> },
-        {label: "Discover", slug: "discover", icon: <SearchIcon color="disabled"/> },
-        {label: "Categories", slug: "cates", icon: <LocalOfferIcon color="disabled"/> },
-        {label: "My Courses", slug: "my-courses", icon: <ImportContactsRoundedIcon color="disabled"/> },
+        {label: "Discover", slug: "/discover", icon: <SearchIcon color="disabled"/> },
+        {label: "Categories", slug: "/cates", icon: <LocalOfferIcon color="disabled"/> },
+        {label: "My Courses", slug: "/my-courses", icon: <ImportContactsRoundedIcon color="disabled"/> },
     ])
 
-    const [currentPage, setCurrentPage] = useState("/");
+    const [currentPage, setCurrentPage] = useState("/discover");
 
 
     var navigation = [];

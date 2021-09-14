@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import "./course.css";
+import "../CSS/course.css";
 
 import course1 from "../ui/courseimg1.jpg"
 import course2 from "../ui/courseimg2.jpg"
@@ -15,21 +15,6 @@ import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
 import DoneAllOutlinedIcon from '@material-ui/icons/DoneAllOutlined';
 
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
 
 
 function CoursePage(props) {
@@ -77,6 +62,7 @@ function CoursePage(props) {
     
     const courseID = props.match.params.courseid;
 
+    
     var courseVideos = [];
     for(let i = 0; i < course.videos.length; i++){
         courseVideos.push(
@@ -89,6 +75,7 @@ function CoursePage(props) {
             </a>            
         );
     }
+    
 
     return (
         <div className="course-page rel flex">
@@ -132,49 +119,61 @@ function CoursePage(props) {
                     </div>
 
                 </div>
-                <div className="section section-c rel">
-                    <h2 className="title s24 fontb">Course <span  className="fontn">Details</span></h2>
+
+                
+                <div className="section section-drop rel" id="acc">
+                    <h2 className="title fontb">Course <span  className="fontn">Details</span></h2>
                     
-                    <div>
-                        <button className="accordion">Course Overview</button>
-                        <div className="panel">
-                            <p>welcome Message</p>
-                            <p>Course Introduction</p>
-                        </div>
+                    <button className="accordion">Course Overview</button>
+                    <div className="panel">
+                        <p>welcome Message</p>
+                        <p>Course Introduction</p>
+                        <p>Objectives</p>
+                        <p>What you'll learn</p>
                     </div>
 
-                    <div>
-                        <button className="accordion">Getting Started</button>
-                        <div className="panel">
-                            <p>Ready to start</p>
-                        </div>
+                    
+                    <button onClick="myfunction()" className="accordion active">Getting Started</button>
+                    <div className="panel">
+                        <p>Ready to start</p>
+                        <p>welcome Message</p>
+                        <p>Course Introduction</p>
+                        <p>What you'll learn</p>
+                    </div>
+                    
+
+                    
+                    <button class="accordion">Setup The Environment</button>
+                    <div class="panel">
+                        <p>Installing Tools</p>
+                        <p>Get familier with Tools</p>
+                    </div>
+                    
+
+                    
+                    <button class="accordion">Objectives</button>
+                    <div class="panel">
+                         <p>Learning Basics</p>
                     </div>
 
-                    <div>
-                        <button className="accordion">Setup The Environment</button>
-                        <div className="panel">
-                            <p>Installing Tools</p>
-                        </div>
+                    
+                    <button class="accordion">Activities</button>
+                    <div class="panel">
+                        <p>Lecture 01</p>
+                        <p>Lecture 02</p>
+                        <p>Lecture 03</p>
+                        <p>Lecture 04</p>
+                        <p>Lecture 05</p>
                     </div>
 
-                    <div>
-                        <button className="accordion">Objectives</button>
-                        <div className="panel">
-                            <p>Learning Basics</p>
-                        </div>
-                    </div>
-
-                    <div>
-                        <button className="accordion">Activities</button>
-                        <div className="panel">
-                            <p>Basic Activities</p>
-                        </div>
-                    </div>
-
-                    <div className="course-videos flex">
-                        {courseVideos}
-                    </div>
                 </div>
+
+                <div className="course-videos flex">
+                    {courseVideos}
+                </div> 
+                    
+                    
+                
 
 
             </div>
@@ -183,7 +182,7 @@ function CoursePage(props) {
                 <h2 className="title fontb">Course <span  className="fontn">Preview</span></h2>
             
                 <div className="preview-video">
-                    <iframe width="540" height="315" src="https://www.youtube.com/embed/7WHvP-ng1P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X9l62w0VfuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <h2 className="title fontb">You'll <span  className="fontn">Learn</span></h2>

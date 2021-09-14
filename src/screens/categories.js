@@ -128,13 +128,13 @@ function CategoriesPage() {
 
         {
             ID: 2,
-            title: "Grapic Designer RoadMap",
+            title: "Graphic Designer RoadMap",
             poster: roadmap2
         },
 
         {
             ID: 2,
-            title: "Web Developer RoadMap",
+            title: "Game Developer RoadMap",
             poster: roadmap4
         },
     ]);
@@ -158,64 +158,66 @@ function CategoriesPage() {
     }
 
     return (
-        <div className="category-page">
+        <div className="category">
+            <div className="category-page">
 
-            <div className="section category-courses">
-                <h2 className="title">ALL <span className="fontn"> Categories </span></h2>
-                <div className="course-cates rel flex">
-                    <div className="flex">
-                        <h2 className="fontn">Web Development</h2>
-                        <h2 className="fontn">JavaScript</h2>
-                        <h2 className="fontn">React</h2>
-                        <h2 className="fontn">CSS</h2>
-                        <h2 className="fontn">Angular</h2>
-                        <h2 className="fontn">Node Js</h2>
-                        <h2 className="fontn">PHP</h2>
-                        <h2 className="fontn">Django</h2>
+                <div className="section category-courses">
+                    <h2 className="title">ALL <span className="fontn"> Categories </span></h2>
+                    <div className="course-cates rel flex">
+                        <div className="flex">
+                            <h2 className="fontn">Web Development</h2>
+                            <h2 className="fontn">JavaScript</h2>
+                            <h2 className="fontn">React</h2>
+                            <h2 className="fontn">CSS</h2>
+                            <h2 className="fontn">Angular</h2>
+                            <h2 className="fontn">Node Js</h2>
+                            <h2 className="fontn">PHP</h2>
+                            <h2 className="fontn">Django</h2>
+                        </div>
+                        
+                        <div className="flex">
+                            <h2 className="fontn">It & Software</h2>
+                            <h2 className="fontn">Design</h2>
+                            <h2 className="fontn">Mobile Development</h2>
+                            <h2 className="fontn">Game Development</h2>
+                            <h2 className="fontn">Enterpreneurship</h2>
+                            <h2 className="fontn">Digital Marketting</h2>
+                        </div>
+
+                        <div className="flex">
+                            <h2 className="fontn">Lifesycle</h2>
+                            <h2 className="fontn">Photograpy</h2>
+                            <h2 className="fontn">Health and fitness</h2>
+                            <h2 className="fontn">Music</h2>
+                            <h2 className="fontn">Teaching and Academics</h2>
+                            <h2 className="fontn">Digital Marketting</h2>
+                        </div>
+                        
+                        
                     </div>
-                    
-                    <div className="flex">
-                        <h2 className="fontn">It & Software</h2>
-                        <h2 className="fontn">Design</h2>
-                        <h2 className="fontn">Mobile Development</h2>
-                        <h2 className="fontn">Game Development</h2>
-                        <h2 className="fontn">Enterpreneurship</h2>
-                        <h2 className="fontn">Digital Marketting</h2>
+                </div>
+
+                <div className="section category-courses flex">
+                    <h2 className="title">ALL COURSES <span className="fontn"> Available </span></h2>
+                    <div className="courses rel flex">
+                        {courseList}
                     </div>
-
-                    <div className="flex">
-                        <h2 className="fontn">Lifesycle</h2>
-                        <h2 className="fontn">Photograpy</h2>
-                        <h2 className="fontn">Health and fitness</h2>
-                        <h2 className="fontn">Music</h2>
-                        <h2 className="fontn">Teaching and Academics</h2>
-                        <h2 className="fontn">Digital Marketting</h2>
+                    <div className="courses rel flex">
+                        {courseList}
                     </div>
-                    
-                    
                 </div>
-            </div>
 
-            <div className="section category-courses">
-                <h2 className="title">COURSES <span className="fontn"> Available </span></h2>
-                <div className="courses rel flex">
-                    {courseList}
+                <div className="section category-roadMaps flex">
+                    <h2 className="title">ALL RoadMaps <span className="fontn"> Available </span></h2>
+                    <div className="courses rel flex">
+                        {roadMapList}
+                    </div> 
+                    <div className="courses rel flex">
+                        {roadMapList}
+                    </div>
                 </div>
-                <div className="courses rel flex">
-                    {courseList}
-                </div>
-            </div>
 
-            <div className="section category-roadMaps">
-                <h2 className="title">RoadMaps <span className="fontn"> Available </span></h2>
-                <div className="courses rel flex">
-                    {roadMapList}
-                </div>
-                <div className="courses rel flex">
-                    {roadMapList}
-                </div>
             </div>
-
         </div>
         
     )
