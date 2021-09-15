@@ -11,7 +11,7 @@ function MycoursesPage() {
     return (
         <div className="mycourses">
         
-            <div className="mycourses-page flex">
+            <div className="mycourses-page">
                 <h2>My Courses</h2>
             </div>
 

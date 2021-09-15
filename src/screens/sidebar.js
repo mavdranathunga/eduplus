@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../ui/logo-udemy.svg';
 
 
 import { NavLink } from "react-router-dom";
@@ -8,14 +7,12 @@ import { NavLink } from "react-router-dom";
 
 //ui--------------------------------------------------------------
 import HomeIcon from '@material-ui/icons/Home';
-import SearchIcon from '@material-ui/icons/Search';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
 import ImportContactsRoundedIcon from '@material-ui/icons/ImportContactsRounded';
 import WbIncandescentOutlinedIcon from '@material-ui/icons/WbIncandescentOutlined';
 import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
 import BatteryChargingFullRoundedIcon from '@material-ui/icons/BatteryChargingFullRounded';
 import InfoRoundedIcon from '@material-ui/icons/InfoRounded';
-import { green, red } from '@material-ui/core/colors';
  
 
 
@@ -23,7 +20,7 @@ function Sidebar(){
 
     const [nav, setNav] = useState([
         {label: "Home", slug: "/home", icon: <HomeIcon color="disabled"/> },
-        {label: "Categories", slug: "/cates", icon: <LocalOfferIcon color="disabled"/> },
+        {label: "Categories", slug: "/categories", icon: <LocalOfferIcon color="disabled"/> },
         {label: "My Courses", slug: "/my-courses", icon: <ImportContactsRoundedIcon color="disabled"/> },
         {label: "About", slug: "/about", icon: <InfoRoundedIcon color="disabled"/> },
     ])

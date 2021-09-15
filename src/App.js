@@ -33,7 +33,7 @@ function App() {
           <Route path="/home" component={HomePage} />
           <Route path="/course/:courseid" component={CoursePage} />
           <Route path="/about" component={AboutPage} />
-          <Route path="/cates" component={CategoriesPage} />
+          <Route path="/categories" component={CategoriesPage} />
           <Route path="/my-courses" component={MycoursesPage} />
           <Route path="/roadMap" component={RoadMapPage} />
         </div>

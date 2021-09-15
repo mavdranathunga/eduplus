@@ -18,7 +18,7 @@ function RoadMapPage() {
                 <h1 className="title-description">Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</h1>
 
 
-                <div className="front-end">
+                <div className="front-end flex">
                     <h1 className="title2">Front-End <span className="fontn"> Roadmap </span></h1>
                     
                     <h1 className="title-description">Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.</h1>

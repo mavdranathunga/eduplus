@@ -69,6 +69,10 @@
   border-radius: 10px;
 }
 
+.webdeveloper-images {
+  align-items: center;
+  justify-content: center;
+}
 .webdeveloper-roadmap-img-1 {
   margin: 20px 10px;
   width: 1180px;
@@ -92,7 +96,7 @@
   margin-top: 100px;
 }
 
-.webDeveloper-roadmap .title-description{
+.webDeveloper-roadmap .title-description {
   font-size: 15px;
   font-weight: 400;
   padding: 0px 10px 10px 10px;
