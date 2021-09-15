@@ -18,7 +18,6 @@
   flex-direction: column;
 }
 
-
 .webDeveloper-roadmap .step {
   flex-direction: column;
   align-items: center;
@@ -28,12 +27,12 @@
   border-radius: 15px;
 }
 
-.webDeveloper-roadmap .title2{
+.webDeveloper-roadmap .title2 {
   font-size: 25px;
   margin-top: 20px;
 }
 
-.webDeveloper-roadmap .step1-2 .step{
+.webDeveloper-roadmap .step1-2 .step {
   width: 50%;
 }
 
@@ -70,11 +69,31 @@
   border-radius: 10px;
 }
 
-.webdeveloper-roadmap-img {
+.webdeveloper-roadmap-img-1 {
   margin: 20px 10px;
-  width: 573px;
-  height: 666px;
-  background-image: url("../ui/frontendImg1.jpg");
+  width: 1180px;
+  height: 3345px;
+  background-image: url("../ui/frontend01.png");
   background-size: contain;
   border-radius: 10px;
+}
+
+.webdeveloper-roadmap-img-2 {
+  margin: 20px 10px;
+  width: 1180px;
+  height: 3345px;
+  background-image: url("../ui/backend01.png");
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.webDeveloper-roadmap .credit {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+.webDeveloper-roadmap .title-description{
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0px 10px 10px 10px;
 }

@@ -15,9 +15,14 @@ function RoadMapPage() {
             <div className="webDeveloper-roadmap">
                 <h2 className="main-title">Web-Development <span className="fontn"> Roadmap </span></h2>
 
+                <h1 className="title-description">Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</h1>
+
+
                 <div className="front-end">
                     <h1 className="title2">Front-End <span className="fontn"> Roadmap </span></h1>
-
+                    
+                    <h1 className="title-description">Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.</h1>
+                    
                     <div className="step1-2 flex">
                         <div className="step flex">
 
@@ -129,11 +134,17 @@ function RoadMapPage() {
                         </div>
                     </div>
 
+                    <h2 className="title2">Detailed Graph <span className="fontn"> for Front-End DEVELOPMENT</span></h2>
+                    <div className="webdeveloper-images flex">
+                        <div className="webdeveloper-roadmap-img-1"/>
+                    </div>
+
                 </div>
 
                 <div className="back-end">
                     <h1 className="title2">Back-End <span className="fontn"> Roadmap </span></h1>
 
+                    <h1 className="title-description">The back- end of a website consists of a server, an application, and a database. A back-end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place.</h1>
                     <div className="step flex">
                         <div className="section-1">
                         <h2 className="title">Step 4 : <span className="fontn"> Back-End </span></h2>
@@ -160,13 +171,15 @@ function RoadMapPage() {
                     </div>
                 </div>
 
-                <h2 className="title2">Detailed Graph <span className="fontn"> for WEB DEVELOPMENT</span></h2>
+                <h2 className="title2">Detailed Graph <span className="fontn"> for Back-End DEVELOPMENT</span></h2>
                 <div className="webdeveloper-images flex">
-                        <div className="webdeveloper-roadmap-img"/>
-                        <div className="webdeveloper-roadmap-img"/>
+                        <div className="webdeveloper-roadmap-img-2"/>
                 </div>
 
+                <h2 className="credit fontb">*Content credit goes to: <a href="https://github.com/kamranahmedse/developer-roadmap" className="fontn">github.com/kamranahmedse/developer-roadmap</a></h2>
+
             </div>
+
         </div>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './ui/logo-udemy.svg';
 import './CSS/App.css';
 import './CSS/props.css';
 
@@ -8,7 +7,7 @@ import Header from './screens/header'
 import Sidebar from './screens/sidebar'
 import HomePage from './screens/home'
 import CoursePage from './screens/course'
-import DiscoverPage from './screens/discover'
+import AboutPage from './screens/about'
 import CategoriesPage from './screens/categories'
 import MycoursesPage from './screens/mycourses'
 import RoadMapPage from './screens/roadMap'
@@ -28,11 +27,12 @@ function App() {
       <HashRouter>
 
         <Sidebar />
-        
+         
         <div className="app-content">
           <Route exact path="/" component={HomePage} />
+          <Route path="/home" component={HomePage} />
           <Route path="/course/:courseid" component={CoursePage} />
-          <Route path="/discover" component={DiscoverPage} />
+          <Route path="/about" component={AboutPage} />
           <Route path="/cates" component={CategoriesPage} />
           <Route path="/my-courses" component={MycoursesPage} />
           <Route path="/roadMap" component={RoadMapPage} />

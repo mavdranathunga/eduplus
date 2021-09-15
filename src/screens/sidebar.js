@@ -14,26 +14,27 @@ import ImportContactsRoundedIcon from '@material-ui/icons/ImportContactsRounded'
 import WbIncandescentOutlinedIcon from '@material-ui/icons/WbIncandescentOutlined';
 import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
 import BatteryChargingFullRoundedIcon from '@material-ui/icons/BatteryChargingFullRounded';
+import InfoRoundedIcon from '@material-ui/icons/InfoRounded';
 import { green, red } from '@material-ui/core/colors';
-
+ 
 
 
 function Sidebar(){
 
     const [nav, setNav] = useState([
-        {label: "Home", slug: "/", icon: <HomeIcon color="disabled"/> },
-        {label: "Discover", slug: "/discover", icon: <SearchIcon color="disabled"/> },
+        {label: "Home", slug: "/home", icon: <HomeIcon color="disabled"/> },
         {label: "Categories", slug: "/cates", icon: <LocalOfferIcon color="disabled"/> },
         {label: "My Courses", slug: "/my-courses", icon: <ImportContactsRoundedIcon color="disabled"/> },
+        {label: "About", slug: "/about", icon: <InfoRoundedIcon color="disabled"/> },
     ])
 
-    const [currentPage, setCurrentPage] = useState("/discover");
+    const [currentPage, setCurrentPage] = useState("/");
 
 
     var navigation = [];
     for(let i=0; i< nav.length; i++){
         navigation.push(
-            <li key={"nav-" + i + "-" + nav[i].slug}>
+            <li >
                 <NavLink to={nav[i].slug} className="link noul flex">
                     {nav[i].icon}
                     <h2 className="lbl">{nav[i].label}</h2>
@@ -86,6 +87,10 @@ function Sidebar(){
                     MAVD Ranathunga
                     <h2 className="uname">@deshan1211</h2>
                 </div>
+            </div>
+
+            <div className="copyright">
+                <h2 className="fontn">© Copyright 2021 EDUPlus+</h2>
             </div>
 
         </div>

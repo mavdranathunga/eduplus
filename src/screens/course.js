@@ -8,8 +8,6 @@ import course3 from "../ui/courseimg3.jpg"
 import course4 from "../ui/courseimg4.png"
 import course5 from "../ui/courseimg5.jpg"
 
-import VerifiedUserOutlinedIcon from '@material-ui/icons/VerifiedUserOutlined';
-import BatteryChargingFullRoundedIcon from '@material-ui/icons/BatteryChargingFullRounded';
 import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
@@ -17,7 +15,67 @@ import DoneAllOutlinedIcon from '@material-ui/icons/DoneAllOutlined';
 
 
 
+
+
+
 function CoursePage(props) {
+
+    const [selected, setSelected] = useState(null)
+
+    const toggle = (i) => {
+        if(selected === i) {
+            return setSelected(null)
+        }
+
+        setSelected(i)
+        
+    }
+
+
+    const accData = [
+        {
+            question: 'Course Overview',
+            answer1: 'welcome Message',
+            answer2: 'Course Introduction',
+            answer3: 'Objectives',
+            answer4: 'What you will learn',
+        },
+
+        {
+            question: 'Getting Started',
+            answer1: 'Ready to start',
+            answer2: 'Course Introduction',
+            answer3: 'Objectives',
+            answer4: 'What you will learn',
+        },
+
+        {
+            question: 'Setup The Environment',
+            answer1: 'Installing Tools',
+            answer2: 'Course Introduction',
+            answer3: 'Get familier with Tools',
+            answer4: 'What you will learn',
+        },
+
+        {
+            question: 'Objectives',
+            answer1: 'Learning Basics',
+            answer2: 'Learning Basics',
+            answer3: 'Learning Basics',
+            answer4: 'Learning Basics',
+        },
+
+        {
+            question: 'Activities',
+            answer1: 'Lecture 01',
+            answer2: 'Lecture 02',
+            answer3: 'Lecture 03',
+            answer4: 'Lecture 04',
+        },
+
+
+    ]
+
 
     useEffect(()=>{
         document.title = "Course Page"
@@ -59,23 +117,6 @@ function CoursePage(props) {
         },
     );
 
-    
-    const courseID = props.match.params.courseid;
-
-    
-    var courseVideos = [];
-    for(let i = 0; i < course.videos.length; i++){
-        courseVideos.push(
-            <a href="#" key={"course-video-" + i} className="noul rel flex">
-                <div className="id fontn">{course.videos[i].ID}</div>
-                <div className="meta rel">
-                    <h1 className="lbl fontb">{course.videos[i].title}</h1>
-                    <h1 className="dur fontn">{course.videos[i].duration}</h1>
-                </div>
-            </a>            
-        );
-    }
-    
 
     return (
         <div className="course-page rel flex">
@@ -121,60 +162,32 @@ function CoursePage(props) {
                 </div>
 
                 
-                <div className="section section-drop rel" id="acc">
+                <div className="section section-drop">
+
+
                     <h2 className="title fontb">Course <span  className="fontn">Details</span></h2>
                     
-                    <button className="accordion">Course Overview</button>
-                    <div className="panel">
-                        <p>welcome Message</p>
-                        <p>Course Introduction</p>
-                        <p>Objectives</p>
-                        <p>What you'll learn</p>
-                    </div>
-
-                    
-                    <button onClick="myfunction()" className="accordion active">Getting Started</button>
-                    <div className="panel">
-                        <p>Ready to start</p>
-                        <p>welcome Message</p>
-                        <p>Course Introduction</p>
-                        <p>What you'll learn</p>
-                    </div>
-                    
-
-                    
-                    <button class="accordion">Setup The Environment</button>
-                    <div class="panel">
-                        <p>Installing Tools</p>
-                        <p>Get familier with Tools</p>
+                    <div className="accordion rel">
+                        {accData.map((item, i) => (
+                            <div className="item">
+                                <div className="title flex" onClick={() => toggle(i)}>
+                                    <h2>{item.question}</h2>
+                                    <span>{selected === i ? '-' : '+'}</span>
+                                </div>
+                                <div className={selected === i ? 'content show' : 'content'}>
+                                    <h2 className="fontn">{item.answer1}</h2>
+                                    <h2 className="fontn">{item.answer2}</h2>
+                                    <h2 className="fontn">{item.answer3}</h2>
+                                    <h2 className="fontn">{item.answer4}</h2>
+                                    
+                                </div>
+                            </div>
+                        ))}
                     </div>
                     
-
-                    
-                    <button class="accordion">Objectives</button>
-                    <div class="panel">
-                         <p>Learning Basics</p>
-                    </div>
-
-                    
-                    <button class="accordion">Activities</button>
-                    <div class="panel">
-                        <p>Lecture 01</p>
-                        <p>Lecture 02</p>
-                        <p>Lecture 03</p>
-                        <p>Lecture 04</p>
-                        <p>Lecture 05</p>
-                    </div>
 
                 </div>
-
-                <div className="course-videos flex">
-                    {courseVideos}
-                </div> 
                     
-                    
-                
-
 
             </div>
 
