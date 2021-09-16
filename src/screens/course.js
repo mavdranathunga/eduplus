@@ -12,6 +12,7 @@ import GradeOutlinedIcon from '@material-ui/icons/GradeOutlined';
 import AssignmentTurnedInIcon from '@material-ui/icons/AssignmentTurnedIn';
 import LoyaltyIcon from '@material-ui/icons/Loyalty';
 import DoneAllOutlinedIcon from '@material-ui/icons/DoneAllOutlined';
+import CreateRoundedIcon from '@material-ui/icons/CreateRounded';
 
 
 
@@ -35,7 +36,7 @@ function CoursePage(props) {
     const accData = [
         {
             question: 'Course Overview',
-            answer1: 'welcome Message',
+            answer1: 'Welcome Message',
             answer2: 'Course Introduction',
             answer3: 'Objectives',
             answer4: 'What you will learn',
@@ -59,10 +60,10 @@ function CoursePage(props) {
 
         {
             question: 'Objectives',
-            answer1: 'Learning Basics',
-            answer2: 'Learning Basics',
-            answer3: 'Learning Basics',
-            answer4: 'Learning Basics',
+            answer1: 'Learn the Basics',
+            answer2: 'Learn the Basics',
+            answer3: 'Learn the Basics',
+            answer4: 'Learn the Basics',
         },
 
         {
@@ -175,10 +176,10 @@ function CoursePage(props) {
                                     <span>{selected === i ? '-' : '+'}</span>
                                 </div>
                                 <div className={selected === i ? 'content show' : 'content'}>
-                                    <h2 className="fontn">{item.answer1}</h2>
-                                    <h2 className="fontn">{item.answer2}</h2>
-                                    <h2 className="fontn">{item.answer3}</h2>
-                                    <h2 className="fontn">{item.answer4}</h2>
+                                    <h2 className="fontn">01. {item.answer1}</h2>
+                                    <h2 className="fontn">02. {item.answer2}</h2>
+                                    <h2 className="fontn">03. {item.answer3}</h2>
+                                    <h2 className="fontn">04. {item.answer4}</h2>
                                     
                                 </div>
                             </div>
@@ -198,33 +199,48 @@ function CoursePage(props) {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/X9l62w0VfuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
-                <h2 className="title fontb">You'll <span  className="fontn">Learn</span></h2>
+
                 
+                <h2 className="title fontb">Requrements</h2>
                 <div className="you-learn bl flex">
                     <div className="learn-item flex">
-                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'purple' }}/>
+                        <CreateRoundedIcon className="icon" style={{ fontSize: 28 } , { color: 'red' }}/>
+                        <h2 className="learn-point fontn">Any computer will work: Windows, macOS or Linux</h2>
+                    </div>
+                    <div className="learn-item flex">
+                        <CreateRoundedIcon className="icon" style={{ fontSize: 28 } , { color: 'red' }}/>
+                        <h2 className="learn-point fontn">Basic programming HTML and CSS.</h2>
+                    </div>
+                    <div className="learn-item flex">
+                        <CreateRoundedIcon className="icon" style={{ fontSize: 28 } , { color: 'red' }}/>
+                        <h2 className="learn-point fontn">Basic/Minimal understanding of JavaScript</h2>
+                    </div>
+                </div>
+
+
+                <h2 className="title fontb">What You <span  className="fontn">will Learn</span></h2>
+                <div className="you-learn bl flex">
+                    <div className="learn-item flex">
+                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'blue' }}/>
                         <h2 className="learn-point fontn">Setting up the environment</h2>
                     </div>
                     <div className="learn-item flex">
-                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'purple' }}/>
+                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'blue' }}/>
                         <h2 className="learn-point fontn">Advanced HTML Practices</h2>
                     </div>
                     <div className="learn-item flex">
-                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'purple' }}/>
+                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'blue' }}/>
                         <h2 className="learn-point fontn">Build a portfolio website</h2>
                     </div>
                     <div className="learn-item flex">
-                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'purple' }}/>
+                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'blue' }}/>
                         <h2 className="learn-point fontn">Start building beautiful websites</h2>
                     </div>
                     <div className="learn-item flex">
-                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'purple' }}/>
+                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'blue' }}/>
                         <h2 className="learn-point fontn">Start building beautiful websites</h2>
                     </div>
-                    <div className="learn-item flex">
-                        <DoneAllOutlinedIcon className="icon" style={{ fontSize: 28 } , { color: 'purple' }}/>
-                        <h2 className="learn-point fontn">Start building beautiful websites</h2>
-                    </div>
+                    
                 </div>
             </div>
 

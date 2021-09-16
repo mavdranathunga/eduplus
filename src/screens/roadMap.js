@@ -5,7 +5,7 @@ import CheckCircleOutlineRoundedIcon from '@material-ui/icons/CheckCircleOutline
 
 function RoadMapPage() {
 
-    useEffect(()=>{
+    useEffect(()=>{ 
         document.title = "RoadMap Page"
     })
 
@@ -14,8 +14,12 @@ function RoadMapPage() {
 
             <div className="webDeveloper-roadmap">
                 <h2 className="main-title">Web-Development <span className="fontn"> Roadmap </span></h2>
-
+                <h2 className="title2">What is  <span className="fontn"> Web Development? </span></h2>
                 <h1 className="title-description">Web development is the work involved in developing a Web site for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</h1>
+
+                <div className="webdeveloper-images flex">
+                        <div className="webdeveloper-roadmap-img-0"/>
+                </div>
 
 
                 <div className="front-end flex">
@@ -134,7 +138,7 @@ function RoadMapPage() {
                         </div>
                     </div>
 
-                    <h2 className="title2">Detailed Graph <span className="fontn"> for Front-End DEVELOPMENT</span></h2>
+                    <h2 className="title2">Detailed Graph <span className="fontn"> for Front-End Development</span></h2>
                     <div className="webdeveloper-images flex">
                         <div className="webdeveloper-roadmap-img-1"/>
                     </div>
@@ -171,12 +175,17 @@ function RoadMapPage() {
                     </div>
                 </div>
 
-                <h2 className="title2">Detailed Graph <span className="fontn"> for Back-End DEVELOPMENT</span></h2>
+                <h2 className="title2">Detailed Graph <span className="fontn"> for Back-End Development</span></h2>
                 <div className="webdeveloper-images flex">
                         <div className="webdeveloper-roadmap-img-2"/>
                 </div>
 
-                <h2 className="credit fontb">*Content credit goes to: <a href="https://github.com/kamranahmedse/developer-roadmap" className="fontn">github.com/kamranahmedse/developer-roadmap</a></h2>
+                <h2 className="title2">Detailed Graph <span className="fontn"> for DevOps Roadmap</span></h2>
+                <div className="webdeveloper-images flex">
+                        <div className="webdeveloper-roadmap-img-3"/>
+                </div>
+
+                <h2 className="credit fontb">**Content credit goes to: <a href="https://github.com/kamranahmedse/developer-roadmap" className="fontn">github.com/kamranahmedse/developer-roadmap</a></h2>
 
             </div>
 

@@ -87,7 +87,7 @@ function Sidebar(){
             </div>
 
             <div className="copyright">
-                <h2 className="fontn">© Copyright 2021 EDUPlus+</h2>
+                <h2 className="fontn">© Copyrights 2021 EDUPlus+</h2>
             </div>
 
         </div>

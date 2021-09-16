@@ -5,7 +5,17 @@
 }
 
 .mycourses-page {
+  min-width: 450px;
+  min-height: 700px;
   margin-left: 270px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.6);
+}
+
+.mycourses-page .h2{
+  font-size: 350x;
+}
+
+.mycourses-page .content{
+  font-size: 20px;
 }

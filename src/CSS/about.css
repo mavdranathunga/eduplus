@@ -10,8 +10,10 @@
 }
 
 .about-page .content {
+  min-width: 450px;
+  max-width: 950px;
   margin: 60px 60px 60px 60px;
-  padding: 55px 60px 50px 60px;
+  padding: 45px 60px 43px 60px;
   border-radius: 15px;
   background-color: rgba(250, 250, 250, 0.6);
 }

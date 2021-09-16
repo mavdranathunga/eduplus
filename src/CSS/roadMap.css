@@ -73,6 +73,16 @@
   align-items: center;
   justify-content: center;
 }
+
+.webdeveloper-roadmap-img-0 {
+  margin: 20px 10px;
+  width: 990px;
+  height: 360px;
+  background-image: url("../ui/webdeveloperroadmap.png");
+  background-size: contain;
+  border-radius: 10px;
+} 
+
 .webdeveloper-roadmap-img-1 {
   margin: 20px 10px;
   width: 1180px;
@@ -84,9 +94,18 @@
 
 .webdeveloper-roadmap-img-2 {
   margin: 20px 10px;
-  width: 1180px;
-  height: 3345px;
+  width: 1020px;
+  height: 2600px;
   background-image: url("../ui/backend01.png");
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.webdeveloper-roadmap-img-3 {
+  margin: 20px 10px;
+  width: 1020px;
+  height: 1900px;
+  background-image: url("../ui/devopsroadmap.png");
   background-size: contain;
   border-radius: 10px;
 }

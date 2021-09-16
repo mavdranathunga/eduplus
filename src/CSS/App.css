@@ -174,8 +174,9 @@
   font-weight: normal;
   justify-content: center;
   align-items: center;
-  padding: 10px 12px 3px 48px;;
-
+  padding: 10px 12px 3px 48px;
+  bottom:5px;
+  position: fixed;
 }
 
 
